@@ -1,0 +1,18 @@
+Pod::Spec.new do |spec|
+  spec.name             = "Content-Ignite-Mobile-SwiftUI"
+  spec.version          = "1.8.2"
+  spec.summary          = "Additional SwiftUI capabilities for Content Ignite Mobile iOS SDK."
+  spec.homepage         = "https://gitlab.com/content-ignite/content-ignite-mobile-sdk-ios-swiftui"
+  spec.source           = { 
+      :http => "https://gitlab.com/api/v4/projects/76075871/packages/maven/com/contentignite/cimobile-sdk-ios/1.8.0/CIMobileSDKSwiftUI.xcframework.zip",
+      :sha256 => "0957f8d34c1197a0f5572edff6c9fee3c844f8c0095a2c3a203a323ed6aef9af"
+  }
+  spec.license          = { :type => "Commercial", :text => "Copyright (c) 2026 Content Ignite Limited. All rights reserved." }
+  spec.authors          = "Content Ignite Limited"
+  spec.swift_version    = "5.0"
+  spec.platform         = :ios, "17.2"
+  spec.ios.deployment_target = "17.2"
+  spec.vendored_frameworks = "CIMobileSDKSwiftUI.xcframework"
+  spec.dependency "Content-Ignite-Mobile-SDK", "~> 1.8.2"
+
+end
